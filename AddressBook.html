@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Lucas Yanetsko">
+  <title>Address Book</title>
+</head>
+<!-- This program is meant to be an address book where a user can enter a persons
+name, email, and phone number and then save their contact information in an "address book."
+The inputs are written to a .txt file and displayed in an HTML table.  The application
+leverages JavaScript to have sortable column headers and also allows for deletion of an 
+individual entry.-->
+<body>
+  <h1>Address Book</h1>
+  <h2>Enter your information to add to the address book</h2>
+
+  <!-- This is the inital form where the user is prompted to enter name, email, and phone number-->
+  <form method="POST" action="DisplayAddressBook.php">
+    <p>Name: <input type="text" name="name" /></p>
+    <p>Email: <input type="text" name="email" /></p>
+    <p>Phone Number: <input type="text" name="phone" /></p>
+    <p><input type="submit" value="Add to Address Book" /></p>
+  </form>
+
+  <!-- This link at the bottom allows a user to view the current address book. -->
+  <p><a href="DisplayAddressBook.php">View Address Book</a></p>
+
+
+</body>
+
+
+</html>
